@@ -114,3 +114,12 @@ img {
 .info__sconto{
     background-color: green;
 }
+
+.card:hover:after{
+    content: "";
+    display: block;
+    /* background-color: black; */
+    background-image: url(../img/1b.webp);
+    
+    
+}
