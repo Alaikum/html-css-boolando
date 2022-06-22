@@ -29,7 +29,8 @@ img {
     color: white;
     font-size: 16px;
     font-weight: bold;
-    width: 1920px;
+    max-width: 1920px;
+    width: 100%;
     z-index: 999;
     position: fixed;
 }
@@ -155,4 +156,54 @@ img {
 
 .info__sconto {
     background-color: green;
+}
+
+
+/* CSS FOOTER  */
+
+#background__footer {
+    background-color: #1A1A1A;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.footer{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title__footer {
+    font-size: 18px;
+    font-weight: bolder;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.leggi__footer {
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.contatti__footer {
+
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.title__footer,
+.leggi__footer,
+.contatti__footer {
+    color: white;
+}
+
+
+.icon {
+    height: 19px;
+    width: 19px;
+    background-color: white;
+    text-align: center;
+    padding-top: 2px;
+    margin-right: 2px;
 }
