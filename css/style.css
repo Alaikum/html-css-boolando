@@ -63,6 +63,8 @@ img {
     position: relative;
 }
 
+
+
 .marca {
     font-size: 14px;
     font-weight: 400;
@@ -93,4 +95,22 @@ img {
     width: 48px;
     font-size: 48px;
     text-align: center;
+}
+
+.sconto{
+    gap: 4px;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    position: absolute;
+    top: 80%;
+    left: 0;
+}
+
+.valore__sconto{
+    background-color: red;
+}
+
+.info__sconto{
+    background-color: green;
 }
