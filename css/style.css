@@ -1,3 +1,96 @@
-body{
-    background-color: aquamarine}
-    ;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 1380px;
+    margin: 0 auto;
+
+}
+
+.nav {
+    background-color: #FF6900;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    /* max-width: 1920px;
+
+    position: fixed; */
+}
+
+#logo {
+    max-height: 30px;
+}
+
+.header__nav {
+    height: 80px;
+    padding: 24px 0 22px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.list__nav {
+    gap: 5px;
+}
+
+
+/* INIZIA IL MAIN  */
+
+.main {
+    padding-top: 60px;
+
+}
+
+.card {
+    flex-basis: calc(100% / 3);
+    position: relative;
+}
+
+.marca {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.modello {
+    font-size: 17px;
+    font-weight: bold;
+
+}
+
+.prezzo {
+    font-size: 13px;
+    font-weight: 700;
+    color: red;
+}
+
+.vecchioprezzo {
+    color: black;
+    text-decoration: line-through;
+}
+
+.cuore {
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 48px;
+    font-size: 48px;
+    text-align: center;
+}
