@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 1380px;
+    margin: 0 auto;
+
+}
+
+.nav {
+    background-color: #FF6900;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    max-width: 1920px;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+}
+
+#logo {
+    max-height: 30px;
+}
+
+.header__nav {
+    height: 80px;
+    padding: 24px 0 22px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.list__nav {
+    gap: 5px;
+}
+
+
+/* INIZIA IL MAIN  */
+
+.main {
+    padding-top: 140px;
+
+}
+
+.card {
+    flex-basis: calc(calc(100% - 40px) / 3);
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    padding-bottom: 50px;
+
+
+
+}
+
+.card:nth-child(3n) {
+
+    margin-right: 0;
+}
+
+/* foto non visibile per la transizione  */
+
+.alternativa {
+
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+
+
+
+}
+
+/* informazioni sempre sopra  */
+.sconto,
+.cuore {
+    z-index: 99;
+}
+
+/* scambio di foto  */
+.card:hover .alternativa {
+    display: inline;
+   
+
+}
+
+.card:hover .cuore{
+    color: red;
+}
+
+
+
+
+
+
+
+.marca {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.modello {
+    font-size: 17px;
+    font-weight: bold;
+
+}
+
+.prezzo {
+    font-size: 13px;
+    font-weight: 700;
+    color: red;
+}
+
+.vecchioprezzo {
+    color: black;
+    text-decoration: line-through;
+}
+
+.cuore {
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 48px;
+    font-size: 48px;
+    text-align: center;
+}
+
+.sconto {
+    gap: 4px;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    position: absolute;
+    top: 80%;
+    left: 0;
+
+}
+
+.valore__sconto {
+    background-color: red;
+}
+
+.info__sconto {
+    background-color: green;
+}
+
+
+/* CSS FOOTER  */
+
+#background__footer {
+    background-color: #1A1A1A;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.footer{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title__footer {
+    font-size: 18px;
+    font-weight: bolder;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.leggi__footer {
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.contatti__footer {
+
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.title__footer,
+.leggi__footer,
+.contatti__footer {
+    color: white;
+}
+
+
+.icon {
+    height: 19px;
+    width: 19px;
+    background-color: white;
+    text-align: center;
+    padding-top: 2px;
+    margin-right: 2px;
+}
