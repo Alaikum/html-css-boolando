@@ -59,9 +59,50 @@ img {
 }
 
 .card {
-    flex-basis: calc(100% / 3);
+    flex-basis: calc( calc(100% - 40px) / 3);
     position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    padding-bottom: 50px;
+
+
+
 }
+
+.card:nth-child(3n){
+
+margin-right: 0;
+}
+
+/* foto non visibile per la transizione  */
+
+.alternativa {
+
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+
+
+
+}
+
+/* informazioni sempre sopra  */
+.sconto,
+.cuore {
+    z-index: 99;
+}
+
+/* scambio di foto  */
+.card:hover .alternativa {
+    display: inline;
+
+}
+
+
+
+
 
 
 
@@ -97,7 +138,7 @@ img {
     text-align: center;
 }
 
-.sconto{
+.sconto {
     gap: 4px;
     color: white;
     font-weight: 700;
@@ -105,21 +146,14 @@ img {
     position: absolute;
     top: 80%;
     left: 0;
+
 }
 
-.valore__sconto{
+.valore__sconto {
     background-color: red;
 }
 
-.info__sconto{
+.info__sconto {
     background-color: green;
 }
 
-.card:hover:after{
-    content: "";
-    display: block;
-    /* background-color: black; */
-    background-image: url(../img/1b.webp);
-    
-    
-}
